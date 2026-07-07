@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+
+![MLflow](https://img.shields.io/badge/MLflow-Experiment%20Tracking-orange)
+
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-ML-yellow)
+
 # MLflow Experiment Tracking — Iris Classification
 
 ## Objective
@@ -12,7 +18,7 @@ and width), 3 target classes (setosa, versicolor, virginica).
 
 ## Project Structure
 ```
-mlflow_experiment/
+MLFlow-Iris-Classifier/
 ├── train.py                # Core task: 3 models, 3 tracked runs
 ├── runs.py                 # 12 tracked runs across 6 model types
 ├── requirements.txt
@@ -66,6 +72,47 @@ KNN, SVM, and Naive Bayes (2 configurations each).
    - Open the **Metrics** page/chart view for accuracy, precision, recall, F1
    - Take the required screenshots and save them into `screenshots/`
 
+## MLflow Screenshots
+
+The following screenshots demonstrate the MLflow experiment tracking workflow and the comparison of different machine learning models.
+
+### MLflow Home
+
+![MLflow Home](screenshots/mlflow_home.png)
+
+### Experiment Dashboard
+
+Displays all experiment runs along with their logged parameters, metrics, and execution details.
+
+![Experiment Dashboard](screenshots/experiment_dashboard.png)
+
+### Runs Overview
+
+Shows all tracked runs and their corresponding logged information in tabular format.
+
+![Runs Overview](screenshots/runs_columns_view.png)
+
+### Run Comparison Table
+
+Comparison of multiple experiment runs based on their logged metrics and parameters.
+
+![Run Comparison Table](screenshots/run_comparison_table.png)
+
+### Run Comparison Chart
+
+Visual comparison of experiment metrics across different runs.
+
+![Run Comparison Chart](screenshots/run_comparison_chart.png)
+
+### Metrics Page
+
+Displays detailed metrics such as Accuracy, Precision, Recall, and F1-score for the selected experiment.
+
+![Metrics Page](screenshots/metrics_page.png)
+
+### Metrics
+
+![Metrics](screenshots/metrics.png)
 ## Results — Comparison Table (all 12 runs)
 
 | Run | Model | Accuracy | Precision | Recall | F1-score |
@@ -89,6 +136,10 @@ KNN, SVM, and Naive Bayes (2 configurations each).
 **Worst model:** `run04_DecisionTree` with **F1-score = 0.9200** — a shallower
 capacity model (`max_depth=6` but a less favorable split/seed) underperformed
 relative to ensembles like Random Forest.
+
+## Conclusion
+
+Among all experiments, Random Forest achieved the best overall performance with an F1-score of 1.0000. KNN and SVM also achieved perfect scores on specific train-test splits. Since the Iris dataset is relatively small and well-separated, multiple models can perform exceptionally well. Random Forest was selected as the preferred model because it provides consistently strong performance while maintaining good generalization.
 
 > Note: Iris is a small, easily-separable dataset, so several models reach
 > perfect scores on some splits. In practice, prefer the model with the most
