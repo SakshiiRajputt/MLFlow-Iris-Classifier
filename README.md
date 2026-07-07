@@ -104,15 +104,13 @@ Visual comparison of experiment metrics across different runs.
 
 ![Run Comparison Chart](screenshots/run_comparison_chart.png)
 
-### Metrics Page
+### Metrics
 
 Displays detailed metrics such as Accuracy, Precision, Recall, and F1-score for the selected experiment.
 
 ![Metrics Page](screenshots/metrics_page.png)
 
-### Metrics
 
-![Metrics](screenshots/metrics.png)
 ## Results — Comparison Table (all 12 runs)
 
 | Run | Model | Accuracy | Precision | Recall | F1-score |
