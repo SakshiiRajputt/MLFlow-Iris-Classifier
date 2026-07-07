@@ -102,15 +102,6 @@ relative to ensembles like Random Forest.
 - **Artifacts:** confusion matrix PNG
 - **Model:** the trained scikit-learn model (loadable via `mlflow.sklearn.load_model`)
 
-## Submission Checklist
-- [x] `train.py`
-- [x] `runs.py` 
-- [x] `requirements.txt`
-- [x] `README.md`
-- [ ] GitHub repository link *(push this folder to GitHub — see below)*
-- [ ] MLflow UI screenshots *(capture from `mlflow ui` and add to `screenshots/`)*
-- [x] Confusion matrix images
-- [x] 15 total tracked MLflow runs 
 
 ## Pushing to GitHub
 ```bash
