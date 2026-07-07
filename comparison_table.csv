@@ -1,0 +1,13 @@
+Run,Model,Accuracy,Precision,Recall,F1-score
+run01_LogisticRegression,LogisticRegression,0.9667,0.9697,0.9667,0.9666
+run02_LogisticRegression,LogisticRegression,0.9778,0.9792,0.9778,0.9778
+run03_DecisionTree,DecisionTree,0.9333,0.9444,0.9333,0.9327
+run04_DecisionTree,DecisionTree,0.9211,0.9209,0.9209,0.92
+run05_RandomForest,RandomForest,1.0,1.0,1.0,1.0
+run06_RandomForest,RandomForest,0.9333,0.9345,0.9333,0.9333
+run07_KNN,KNN,1.0,1.0,1.0,1.0
+run08_KNN,KNN,0.9474,0.9556,0.9444,0.9459
+run09_SVM,SVM,1.0,1.0,1.0,1.0
+run10_SVM,SVM,1.0,1.0,1.0,1.0
+run11_NaiveBayes,NaiveBayes,0.9667,0.9697,0.9667,0.9666
+run12_NaiveBayes,NaiveBayes,0.9434,0.9434,0.9434,0.9429
